@@ -9,6 +9,9 @@ document.getElementById('attraction-form').addEventListener('submit', function(e
     // Simple formula to calculate emotional attraction
     const attractionScore = (communication * 0.3) + (empathy * 0.3) + (shared_interests * 0.2) + (trust * 0.2);
     const attractionPercentage = (attractionScore / 10) * 100;
-
-    document.getElementById('result').textContent = `Emotional Attraction Score: ${attractionPercentage.toFixed(2)}%`;
+ if(attractionPercentage < 70){
+    document.getElementById('result').textContent = `Emotional Attraction Score: ${attractionPercentage.toFixed(2)}% |She doesn't feel the same`;
+ }else if(attractionPercentage > 70){
+    document.getElementById('result').textContent = `Emotional Attraction Score: ${attractionPercentage.toFixed(2)}% |She likes you, man!`;
+ }
 });
