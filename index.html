@@ -9,6 +9,31 @@
 <body>
     <div class="container">
         <h1>Emotional Attraction Calculator</h1>
+        <div id="modal">
+            <button id="help">Help</button>
+            <dialog id="helpModal">
+                <div class="attraction-level">
+                    <h2>1. Below 40% (1-4 average score)</h2>
+                    <p>At this level, the relationship might be more casual or distant. Both individuals are likely not particularly emotionally or physically invested in each other. Attraction is either minimal or absent. This could indicate that the bond is more superficial, with limited connection.</p>
+                </div>
+            
+                <div class="attraction-level">
+                    <h2>2. 40% - 60% (4-6 average score)</h2>
+                    <p>In this range, the relationship tends to be neutral. There is some degree of closeness, but it's not strong enough to clearly indicate romantic or physical attraction. The connection might be friendly or casual, and there’s potential for attraction to grow over time if the relationship continues to develop.</p>
+                </div>
+            
+                <div class="attraction-level">
+                    <h2>3. 60% - 80% (6-8 average score)</h2>
+                    <p>This score suggests a strong bond, with emotional and physical attraction likely present. There is a high level of trust, emotional support, and shared interests. The relationship is more meaningful, and attraction—both romantic and physical—is possible. The intensity of the attraction may vary, but there is clear potential for deeper feelings to form.</p>
+                </div>
+            
+                <div class="attraction-level">
+                    <h2>4. 80% - 100% (8-10 average score)</h2>
+                    <p>At this level, the relationship is deeply connected. Both individuals are likely experiencing strong mutual attraction, emotionally and possibly physically. They spend a lot of time together, engage in meaningful conversations, and demonstrate a deep level of care for one another. This is where romantic attraction tends to be strongest, with signs of flirtation, physical closeness, or affection (such as frequent hugs or touches) often present.</p>
+                </div>
+                <button id="closeIt">Close</button>
+            </dialog>
+        </div>
         <form id="attraction-form">
             <label for="conversation">Depth of conversation (1-10):</label>
             <input type="number" id="conversation" name="conversation" min="1" max="10" required>
@@ -26,31 +51,7 @@
         </form>
         <div id="result"></div>
     </div>
-    <div>
-        <button id="help">Help</button>
-        <dialog id="helpModal">
-            <div class="attraction-level">
-                <h2>1. Below 40% (1-4 average score)</h2>
-                <p>At this level, the relationship might be more casual or distant. Both individuals are likely not particularly emotionally or physically invested in each other. Attraction is either minimal or absent. This could indicate that the bond is more superficial, with limited connection.</p>
-            </div>
-        
-            <div class="attraction-level">
-                <h2>2. 40% - 60% (4-6 average score)</h2>
-                <p>In this range, the relationship tends to be neutral. There is some degree of closeness, but it's not strong enough to clearly indicate romantic or physical attraction. The connection might be friendly or casual, and there’s potential for attraction to grow over time if the relationship continues to develop.</p>
-            </div>
-        
-            <div class="attraction-level">
-                <h2>3. 60% - 80% (6-8 average score)</h2>
-                <p>This score suggests a strong bond, with emotional and physical attraction likely present. There is a high level of trust, emotional support, and shared interests. The relationship is more meaningful, and attraction—both romantic and physical—is possible. The intensity of the attraction may vary, but there is clear potential for deeper feelings to form.</p>
-            </div>
-        
-            <div class="attraction-level">
-                <h2>4. 80% - 100% (8-10 average score)</h2>
-                <p>At this level, the relationship is deeply connected. Both individuals are likely experiencing strong mutual attraction, emotionally and possibly physically. They spend a lot of time together, engage in meaningful conversations, and demonstrate a deep level of care for one another. This is where romantic attraction tends to be strongest, with signs of flirtation, physical closeness, or affection (such as frequent hugs or touches) often present.</p>
-            </div>
-            <button id="closeIt">Close</button>
-        </dialog>
-    </div>
+    
 
     <script src="script.js"></script>
 </body>
